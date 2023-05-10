@@ -1,0 +1,32 @@
+.meme_gene{
+    font-family: sans-serif;
+    text-align: center;
+}
+.meme_gene img{
+    height:430px;
+    object-fit:cover;
+}
+.meme_gene .gene_meme_btn{
+    padding:8px 20px;
+    border:none;
+    margin:24px 0;
+    border-left:4px solid #222;
+    border-right:4px solid #222;
+    font-size: 20px;
+    color:red;
+    cursor:pointer;
+    transition:all 400ms ease;
+}
+.meme_gene .gene_meme_btn:hover{
+    padding:8px 36px;
+    border-left:8px solid #222;
+    border-right:8px solid #222;
+    letter-spacing: 3px;;
+}
+.meme_gene .author{
+    margin:8px;
+}
+/* .meme_gene img{
+    width:40%;
+    height:30vh;
+} */
