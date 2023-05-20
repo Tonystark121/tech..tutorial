@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY_Timer</title>
+    <link rel="stylesheet" href="timer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+<div class="timer">
+    <div class="controls">
+        <input type="text" id="duration" value="30">
+        <div class="btns">
+           <button id="start"><i class="fa-solid fa-play"></i></button>
+           <button id="pause"><i class="fa-solid fa-pause"></i> </button>
+        </div>
+    </div>
+    <svg class="dial">
+        <!-- use stroke dasharray = perimeter of circle. dashoffset to be move in -ve dir to move the border in clockwise dir transform to make it perpendicular instead of horizontal -->
+        <circle r="190" cx="0" cy="200" fill="transparent" stroke="blue" stroke-width="15" transform="rotate(-90 100 100)" /> 
+        <audio id="alarmMusic">
+            <source src="horse.ogg" type="audio/ogg">
+            <source src="horse.mp3" type="audio/mpeg">
+          </audio> 
+    </svg>
+</div>
+    <script src="timer.js"></script>
+</body>
+</html>
